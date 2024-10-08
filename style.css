@@ -1,0 +1,259 @@
+/*
+nav en flex 
+header fixed center cover + effet over bouton 
+icon part en flex 
+header news grid
+main news en flex
+contact list en flex
+contact media en grid
+footer en flex
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(250, 250, 250);
+    color: rgb(29, 29, 29);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 0.75rem;
+}
+
+nav li {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#language {
+    background: rgb(196, 191, 191);
+    padding: 10px 20px;
+    border-radius: 999px;
+}
+
+header {
+    background: url(./assets/img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    padding: 100px 0;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+h1 {
+    color: rgb(250, 250, 250);
+    text-transform: uppercase;
+}
+
+.main-header button {
+    border: 1px solid rgb(250, 250, 250);
+    background: transparent;
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+    font-size: 500;
+    text-transform: uppercase;
+}
+
+.main-header button:hover {
+    background: rgb(250, 250, 250);
+    color: rgb(29, 29, 29);
+    transition: 0.3s ease-in-out;
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.header-text p {
+    width: 50%;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+.icon-part {
+    background: rgb(29, 29, 29);
+    color: rgb(250, 250, 250);
+    width: 100%;
+    height: 60vh;
+}
+
+.icon-part-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 100px 0;
+    gap: 50px;
+}
+
+.list-icon-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.lip-logo {
+    margin-bottom: 30px;
+}
+
+.list-icon-part h3 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.list-icon-part p {
+    font-size: 0.875rem;
+    margin-bottom: 30px;
+}
+
+.list-icon-part button {
+    border: 1px solid rgb(250, 250, 250);
+    background: transparent;
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+}
+
+.list-icon-part button:hover {
+    background: rgb(250, 250, 250);
+    color: rgb(29, 29, 29);
+    transition: 0.3s ease-in-out;
+}
+
+.news-part {
+    width: 100%;
+    height: 80vh;
+    background: rgb(221, 220, 220);
+    align-items: center;
+    justify-content: center;
+}
+
+.header-news {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.left-part h2 {
+    text-transform: uppercase;
+}
+
+.right-part button {
+    border: 1px solid rgb(29, 29, 29);
+    background: transparent;
+    padding: 20px 40px;
+    text-transform: uppercase;
+}
+
+.main-news {
+    display: flex;
+    width: 100%;
+}
+
+.main-news-container {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    gap: 90px;
+}
+
+.main-news-container h4 {
+    margin: 10px 0;
+}
+
+.main-news-container p {
+    font-size: 0.775rem;
+}
+
+.main-news-container .link {
+    margin-top: 20px;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-list {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.infos-p li {
+    list-style: none;
+}
+
+.infos-p a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background: rgb(29, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+    color: rgb(250, 250, 250);
+    gap: 30px;
+}
+
+footer h3 {
+    text-transform: uppercase;
+}
+
+footer ul {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+    list-style: none;
+}
